@@ -17,9 +17,11 @@ run <- function() {
    hive3$edges$weight <- sqrt(hive3$edges$weight)*0.5
    hive3$nodes$size <- 0.5
    plotHive(hive3)
+   outputdata <<- hive3$nodes
 }
 
 output <- function(outputfile) {
-   system(paste("mv Rplots.pdf ", outputfile, sep=""))
+   write.csv(outputdata, outputfile)
+   #system(paste("mv Rplots.pdf ", outputfile, sep=""))
 }
 
