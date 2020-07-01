@@ -1,2 +1,2 @@
 Prefix plugins/HIVE/example
-Plugin HIVE inputfile Safariland.csv outputfile Rplots.pdf
+Plugin HIVE inputfile Safariland.csv outputfile nodes.csv
